@@ -1,0 +1,512 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (win64) Build 1215546 Mon Apr 27 19:22:08 MDT 2015
+| Date         : Thu Jun 25 16:41:55 2015
+| Host         : Sparky running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'PxlClkGen'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of PxlClkGen from xilinx.com:ip:clk_wiz:3.6 to xilinx.com:ip:clk_wiz:5.1 (Rev. 6)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Upgrade messages
+-------------------
+
+Removed parameter Override_Dcm
+Removed parameter Override_Dcm_Clkgen
+Removed parameter Dcm_Clk_Feedback
+Removed parameter Dcm_Clk_Out1_Port
+Removed parameter Dcm_Clk_Out2_Port
+Removed parameter Dcm_Clk_Out3_Port
+Removed parameter Dcm_Clk_Out4_Port
+Removed parameter Dcm_Clk_Out5_Port
+Removed parameter Dcm_Clk_Out6_Port
+Removed parameter Dcm_Clkdv_Divide
+Removed parameter Dcm_Clkfx_Divide
+Removed parameter Dcm_Clkfx_Multiply
+Removed parameter Dcm_Clkgen_Clk_Out1_Port
+Removed parameter Dcm_Clkgen_Clk_Out2_Port
+Removed parameter Dcm_Clkgen_Clk_Out3_Port
+Removed parameter Dcm_Clkgen_Clkfx_Divide
+Removed parameter Dcm_Clkgen_Clkfx_Md_Max
+Removed parameter Dcm_Clkgen_Clkfx_Multiply
+Removed parameter Dcm_Clkgen_Clkfxdv_Divide
+Removed parameter Dcm_Clkgen_Clkin_Period
+Removed parameter Dcm_Clkgen_Startup_Wait
+Removed parameter Dcm_Clkin_Divide_By_2
+Removed parameter Dcm_Clkout_Phase_Shift
+Removed parameter Dcm_Deskew_Adjust
+Removed parameter Dcm_Phase_Shift
+Removed parameter Dcm_Startup_Wait
+Removed parameter Dcm_Clkgen_Notes
+Removed parameter Dcm_Clkgen_Spread_Spectrum
+Removed parameter Dcm_Clkin_Period
+Removed parameter Dcm_Notes
+Removed parameter dcm_pll_cascade
+Added parameter Reset_Type with value ACTIVE_HIGH
+Added parameter USE_SAFE_CLOCK_STARTUP with value false
+Added parameter USE_CLOCK_SEQUENCING with value false
+Added parameter CLKOUT1_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT2_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT3_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT4_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT5_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT6_SEQUENCE_NUMBER with value 1
+Added parameter CLKOUT7_SEQUENCE_NUMBER with value 1
+WARNING: upgrade cannot rename parameter Reset_Type to RESET_TYPE : a parameter called RESET_TYPE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter clock_mgr_type to CLOCK_MGR_TYPE : a parameter called CLOCK_MGR_TYPE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Freq_Synth to USE_FREQ_SYNTH : a parameter called USE_FREQ_SYNTH already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Spread_Spectrum to USE_SPREAD_SPECTRUM : a parameter called USE_SPREAD_SPECTRUM already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Phase_Alignment to USE_PHASE_ALIGNMENT : a parameter called USE_PHASE_ALIGNMENT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Min_Power to USE_MIN_POWER : a parameter called USE_MIN_POWER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Dyn_Phase_Shift to USE_DYN_PHASE_SHIFT : a parameter called USE_DYN_PHASE_SHIFT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Dyn_Reconfig to USE_DYN_RECONFIG : a parameter called USE_DYN_RECONFIG already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Jitter_Sel to JITTER_SEL : a parameter called JITTER_SEL already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Prim_In_Freq to PRIM_IN_FREQ : a parameter called PRIM_IN_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter In_Freq_Units to IN_FREQ_UNITS : a parameter called IN_FREQ_UNITS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter In_Jitter_Units to IN_JITTER_UNITS : a parameter called IN_JITTER_UNITS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Relative_Inclk to RELATIVE_INCLK : a parameter called RELATIVE_INCLK already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Inclk_Switchover to USE_INCLK_SWITCHOVER : a parameter called USE_INCLK_SWITCHOVER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Secondary_In_Freq to SECONDARY_IN_FREQ : a parameter called SECONDARY_IN_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter secondary_port to SECONDARY_PORT : a parameter called SECONDARY_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Secondary_Source to SECONDARY_SOURCE : a parameter called SECONDARY_SOURCE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Jitter_Options to JITTER_OPTIONS : a parameter called JITTER_OPTIONS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkin1_UI_Jitter to CLKIN1_UI_JITTER : a parameter called CLKIN1_UI_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkin2_UI_Jitter to CLKIN2_UI_JITTER : a parameter called CLKIN2_UI_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Prim_In_Jitter to PRIM_IN_JITTER : a parameter called PRIM_IN_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Secondary_In_Jitter to SECONDARY_IN_JITTER : a parameter called SECONDARY_IN_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkin1_Jitter_Ps to CLKIN1_JITTER_PS : a parameter called CLKIN1_JITTER_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkin2_Jitter_Ps to CLKIN2_JITTER_PS : a parameter called CLKIN2_JITTER_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout2_Used to CLKOUT2_USED : a parameter called CLKOUT2_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout3_Used to CLKOUT3_USED : a parameter called CLKOUT3_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout4_Used to CLKOUT4_USED : a parameter called CLKOUT4_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout5_Used to CLKOUT5_USED : a parameter called CLKOUT5_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout6_Used to CLKOUT6_USED : a parameter called CLKOUT6_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout7_Used to CLKOUT7_USED : a parameter called CLKOUT7_USED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Num_Out_Clks to NUM_OUT_CLKS : a parameter called NUM_OUT_CLKS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out1_Use_Fine_Ps_GUI to CLK_OUT1_USE_FINE_PS_GUI : a parameter called CLK_OUT1_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out2_Use_Fine_Ps_GUI to CLK_OUT2_USE_FINE_PS_GUI : a parameter called CLK_OUT2_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out3_Use_Fine_Ps_GUI to CLK_OUT3_USE_FINE_PS_GUI : a parameter called CLK_OUT3_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out4_Use_Fine_Ps_GUI to CLK_OUT4_USE_FINE_PS_GUI : a parameter called CLK_OUT4_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out5_Use_Fine_Ps_GUI to CLK_OUT5_USE_FINE_PS_GUI : a parameter called CLK_OUT5_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out6_Use_Fine_Ps_GUI to CLK_OUT6_USE_FINE_PS_GUI : a parameter called CLK_OUT6_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clk_Out7_Use_Fine_Ps_GUI to CLK_OUT7_USE_FINE_PS_GUI : a parameter called CLK_OUT7_USE_FINE_PS_GUI already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter primary_port to PRIMARY_PORT : a parameter called PRIMARY_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT1_port to CLK_OUT1_PORT : a parameter called CLK_OUT1_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT2_port to CLK_OUT2_PORT : a parameter called CLK_OUT2_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT3_port to CLK_OUT3_PORT : a parameter called CLK_OUT3_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT4_port to CLK_OUT4_PORT : a parameter called CLK_OUT4_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT5_port to CLK_OUT5_PORT : a parameter called CLK_OUT5_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT6_port to CLK_OUT6_PORT : a parameter called CLK_OUT6_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_OUT7_port to CLK_OUT7_PORT : a parameter called CLK_OUT7_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DADDR_port to DADDR_PORT : a parameter called DADDR_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DCLK_port to DCLK_PORT : a parameter called DCLK_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DRDY_port to DRDY_PORT : a parameter called DRDY_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DWE_port to DWE_PORT : a parameter called DWE_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DIN_port to DIN_PORT : a parameter called DIN_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DOUT_port to DOUT_PORT : a parameter called DOUT_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter DEN_port to DEN_PORT : a parameter called DEN_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter PSCLK_port to PSCLK_PORT : a parameter called PSCLK_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter PSEN_port to PSEN_PORT : a parameter called PSEN_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter PSINCDEC_port to PSINCDEC_PORT : a parameter called PSINCDEC_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter PSDONE_port to PSDONE_PORT : a parameter called PSDONE_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout1_Requested_Out_Freq to CLKOUT1_REQUESTED_OUT_FREQ : a parameter called CLKOUT1_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout1_Requested_Phase to CLKOUT1_REQUESTED_PHASE : a parameter called CLKOUT1_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout1_Requested_Duty_Cycle to CLKOUT1_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT1_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout2_Requested_Out_Freq to CLKOUT2_REQUESTED_OUT_FREQ : a parameter called CLKOUT2_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout2_Requested_Phase to CLKOUT2_REQUESTED_PHASE : a parameter called CLKOUT2_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout2_Requested_Duty_Cycle to CLKOUT2_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT2_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout3_Requested_Out_Freq to CLKOUT3_REQUESTED_OUT_FREQ : a parameter called CLKOUT3_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout3_Requested_Phase to CLKOUT3_REQUESTED_PHASE : a parameter called CLKOUT3_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout3_Requested_Duty_Cycle to CLKOUT3_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT3_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout4_Requested_Out_Freq to CLKOUT4_REQUESTED_OUT_FREQ : a parameter called CLKOUT4_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout4_Requested_Phase to CLKOUT4_REQUESTED_PHASE : a parameter called CLKOUT4_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout4_Requested_Duty_Cycle to CLKOUT4_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT4_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout5_Requested_Out_Freq to CLKOUT5_REQUESTED_OUT_FREQ : a parameter called CLKOUT5_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout5_Requested_Phase to CLKOUT5_REQUESTED_PHASE : a parameter called CLKOUT5_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout5_Requested_Duty_Cycle to CLKOUT5_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT5_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout6_Requested_Out_Freq to CLKOUT6_REQUESTED_OUT_FREQ : a parameter called CLKOUT6_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout6_Requested_Phase to CLKOUT6_REQUESTED_PHASE : a parameter called CLKOUT6_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout6_Requested_Duty_Cycle to CLKOUT6_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT6_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout7_Requested_Out_Freq to CLKOUT7_REQUESTED_OUT_FREQ : a parameter called CLKOUT7_REQUESTED_OUT_FREQ already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout7_Requested_Phase to CLKOUT7_REQUESTED_PHASE : a parameter called CLKOUT7_REQUESTED_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout7_Requested_Duty_Cycle to CLKOUT7_REQUESTED_DUTY_CYCLE : a parameter called CLKOUT7_REQUESTED_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Max_I_Jitter to USE_MAX_I_JITTER : a parameter called USE_MAX_I_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Min_O_Jitter to USE_MIN_O_JITTER : a parameter called USE_MIN_O_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Prim_Source to PRIM_SOURCE : a parameter called PRIM_SOURCE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout1_Drives to CLKOUT1_DRIVES : a parameter called CLKOUT1_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout2_Drives to CLKOUT2_DRIVES : a parameter called CLKOUT2_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout3_Drives to CLKOUT3_DRIVES : a parameter called CLKOUT3_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout4_Drives to CLKOUT4_DRIVES : a parameter called CLKOUT4_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout5_Drives to CLKOUT5_DRIVES : a parameter called CLKOUT5_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout6_Drives to CLKOUT6_DRIVES : a parameter called CLKOUT6_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkout7_Drives to CLKOUT7_DRIVES : a parameter called CLKOUT7_DRIVES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Feedback_Source to FEEDBACK_SOURCE : a parameter called FEEDBACK_SOURCE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Clkfb_In_Signaling to CLKFB_IN_SIGNALING : a parameter called CLKFB_IN_SIGNALING already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_IN_port to CLKFB_IN_PORT : a parameter called CLKFB_IN_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_IN_P_port to CLKFB_IN_P_PORT : a parameter called CLKFB_IN_P_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_IN_N_port to CLKFB_IN_N_PORT : a parameter called CLKFB_IN_N_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_OUT_port to CLKFB_OUT_PORT : a parameter called CLKFB_OUT_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_OUT_P_port to CLKFB_OUT_P_PORT : a parameter called CLKFB_OUT_P_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_OUT_N_port to CLKFB_OUT_N_PORT : a parameter called CLKFB_OUT_N_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Platform to PLATFORM : a parameter called PLATFORM already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Summary_Strings to SUMMARY_STRINGS : a parameter called SUMMARY_STRINGS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Locked to USE_LOCKED : a parameter called USE_LOCKED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter calc_done to CALC_DONE : a parameter called CALC_DONE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Reset to USE_RESET : a parameter called USE_RESET already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Power_Down to USE_POWER_DOWN : a parameter called USE_POWER_DOWN already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Status to USE_STATUS : a parameter called USE_STATUS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Freeze to USE_FREEZE : a parameter called USE_FREEZE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Clk_Valid to USE_CLK_VALID : a parameter called USE_CLK_VALID already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Inclk_Stopped to USE_INCLK_STOPPED : a parameter called USE_INCLK_STOPPED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Use_Clkfb_Stopped to USE_CLKFB_STOPPED : a parameter called USE_CLKFB_STOPPED already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter RESET_port to RESET_PORT : a parameter called RESET_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter LOCKED_port to LOCKED_PORT : a parameter called LOCKED_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Power_Down_port to POWER_DOWN_PORT : a parameter called POWER_DOWN_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_VALID_port to CLK_VALID_PORT : a parameter called CLK_VALID_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter STATUS_port to STATUS_PORT : a parameter called STATUS_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLK_IN_SEL_port to CLK_IN_SEL_PORT : a parameter called CLK_IN_SEL_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter INPUT_CLK_STOPPED_port to INPUT_CLK_STOPPED_PORT : a parameter called INPUT_CLK_STOPPED_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter CLKFB_STOPPED_port to CLKFB_STOPPED_PORT : a parameter called CLKFB_STOPPED_PORT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Override_Mmcm to OVERRIDE_MMCM : a parameter called OVERRIDE_MMCM already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Notes to MMCM_NOTES : a parameter called MMCM_NOTES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Divclk_Divide to MMCM_DIVCLK_DIVIDE : a parameter called MMCM_DIVCLK_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Bandwidth to MMCM_BANDWIDTH : a parameter called MMCM_BANDWIDTH already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkfbout_Mult_F to MMCM_CLKFBOUT_MULT_F : a parameter called MMCM_CLKFBOUT_MULT_F already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkfbout_Phase to MMCM_CLKFBOUT_PHASE : a parameter called MMCM_CLKFBOUT_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkfbout_Use_Fine_Ps to MMCM_CLKFBOUT_USE_FINE_PS : a parameter called MMCM_CLKFBOUT_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkin1_Period to MMCM_CLKIN1_PERIOD : a parameter called MMCM_CLKIN1_PERIOD already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkin2_Period to MMCM_CLKIN2_PERIOD : a parameter called MMCM_CLKIN2_PERIOD already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout4_Cascade to MMCM_CLKOUT4_CASCADE : a parameter called MMCM_CLKOUT4_CASCADE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clock_Hold to MMCM_CLOCK_HOLD : a parameter called MMCM_CLOCK_HOLD already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Compensation to MMCM_COMPENSATION : a parameter called MMCM_COMPENSATION already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Ref_Jitter1 to MMCM_REF_JITTER1 : a parameter called MMCM_REF_JITTER1 already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Ref_Jitter2 to MMCM_REF_JITTER2 : a parameter called MMCM_REF_JITTER2 already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Startup_Wait to MMCM_STARTUP_WAIT : a parameter called MMCM_STARTUP_WAIT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout0_Divide_F to MMCM_CLKOUT0_DIVIDE_F : a parameter called MMCM_CLKOUT0_DIVIDE_F already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout0_Duty_Cycle to MMCM_CLKOUT0_DUTY_CYCLE : a parameter called MMCM_CLKOUT0_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout0_Phase to MMCM_CLKOUT0_PHASE : a parameter called MMCM_CLKOUT0_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout0_Use_Fine_Ps to MMCM_CLKOUT0_USE_FINE_PS : a parameter called MMCM_CLKOUT0_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout1_Divide to MMCM_CLKOUT1_DIVIDE : a parameter called MMCM_CLKOUT1_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout1_Duty_Cycle to MMCM_CLKOUT1_DUTY_CYCLE : a parameter called MMCM_CLKOUT1_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout1_Phase to MMCM_CLKOUT1_PHASE : a parameter called MMCM_CLKOUT1_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout1_Use_Fine_Ps to MMCM_CLKOUT1_USE_FINE_PS : a parameter called MMCM_CLKOUT1_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout2_Divide to MMCM_CLKOUT2_DIVIDE : a parameter called MMCM_CLKOUT2_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout2_Duty_Cycle to MMCM_CLKOUT2_DUTY_CYCLE : a parameter called MMCM_CLKOUT2_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout2_Phase to MMCM_CLKOUT2_PHASE : a parameter called MMCM_CLKOUT2_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout2_Use_Fine_Ps to MMCM_CLKOUT2_USE_FINE_PS : a parameter called MMCM_CLKOUT2_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout3_Divide to MMCM_CLKOUT3_DIVIDE : a parameter called MMCM_CLKOUT3_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout3_Duty_Cycle to MMCM_CLKOUT3_DUTY_CYCLE : a parameter called MMCM_CLKOUT3_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout3_Phase to MMCM_CLKOUT3_PHASE : a parameter called MMCM_CLKOUT3_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout3_Use_Fine_Ps to MMCM_CLKOUT3_USE_FINE_PS : a parameter called MMCM_CLKOUT3_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout4_Divide to MMCM_CLKOUT4_DIVIDE : a parameter called MMCM_CLKOUT4_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout4_Duty_Cycle to MMCM_CLKOUT4_DUTY_CYCLE : a parameter called MMCM_CLKOUT4_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout4_Phase to MMCM_CLKOUT4_PHASE : a parameter called MMCM_CLKOUT4_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout4_Use_Fine_Ps to MMCM_CLKOUT4_USE_FINE_PS : a parameter called MMCM_CLKOUT4_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout5_Divide to MMCM_CLKOUT5_DIVIDE : a parameter called MMCM_CLKOUT5_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout5_Duty_Cycle to MMCM_CLKOUT5_DUTY_CYCLE : a parameter called MMCM_CLKOUT5_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout5_Phase to MMCM_CLKOUT5_PHASE : a parameter called MMCM_CLKOUT5_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout5_Use_Fine_Ps to MMCM_CLKOUT5_USE_FINE_PS : a parameter called MMCM_CLKOUT5_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout6_Divide to MMCM_CLKOUT6_DIVIDE : a parameter called MMCM_CLKOUT6_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout6_Duty_Cycle to MMCM_CLKOUT6_DUTY_CYCLE : a parameter called MMCM_CLKOUT6_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout6_Phase to MMCM_CLKOUT6_PHASE : a parameter called MMCM_CLKOUT6_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Mmcm_Clkout6_Use_Fine_Ps to MMCM_CLKOUT6_USE_FINE_PS : a parameter called MMCM_CLKOUT6_USE_FINE_PS already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Override_Pll to OVERRIDE_PLL : a parameter called OVERRIDE_PLL already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Notes to PLL_NOTES : a parameter called PLL_NOTES already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Bandwidth to PLL_BANDWIDTH : a parameter called PLL_BANDWIDTH already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkfbout_Mult to PLL_CLKFBOUT_MULT : a parameter called PLL_CLKFBOUT_MULT already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkfbout_Phase to PLL_CLKFBOUT_PHASE : a parameter called PLL_CLKFBOUT_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clk_Feedback to PLL_CLK_FEEDBACK : a parameter called PLL_CLK_FEEDBACK already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Divclk_Divide to PLL_DIVCLK_DIVIDE : a parameter called PLL_DIVCLK_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkin_Period to PLL_CLKIN_PERIOD : a parameter called PLL_CLKIN_PERIOD already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Compensation to PLL_COMPENSATION : a parameter called PLL_COMPENSATION already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Ref_Jitter to PLL_REF_JITTER : a parameter called PLL_REF_JITTER already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout0_Divide to PLL_CLKOUT0_DIVIDE : a parameter called PLL_CLKOUT0_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout0_Duty_Cycle to PLL_CLKOUT0_DUTY_CYCLE : a parameter called PLL_CLKOUT0_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout0_Phase to PLL_CLKOUT0_PHASE : a parameter called PLL_CLKOUT0_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout1_Divide to PLL_CLKOUT1_DIVIDE : a parameter called PLL_CLKOUT1_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout1_Duty_Cycle to PLL_CLKOUT1_DUTY_CYCLE : a parameter called PLL_CLKOUT1_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout1_Phase to PLL_CLKOUT1_PHASE : a parameter called PLL_CLKOUT1_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout2_Divide to PLL_CLKOUT2_DIVIDE : a parameter called PLL_CLKOUT2_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout2_Duty_Cycle to PLL_CLKOUT2_DUTY_CYCLE : a parameter called PLL_CLKOUT2_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout2_Phase to PLL_CLKOUT2_PHASE : a parameter called PLL_CLKOUT2_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout3_Divide to PLL_CLKOUT3_DIVIDE : a parameter called PLL_CLKOUT3_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout3_Duty_Cycle to PLL_CLKOUT3_DUTY_CYCLE : a parameter called PLL_CLKOUT3_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout3_Phase to PLL_CLKOUT3_PHASE : a parameter called PLL_CLKOUT3_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout4_Divide to PLL_CLKOUT4_DIVIDE : a parameter called PLL_CLKOUT4_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout4_Duty_Cycle to PLL_CLKOUT4_DUTY_CYCLE : a parameter called PLL_CLKOUT4_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout4_Phase to PLL_CLKOUT4_PHASE : a parameter called PLL_CLKOUT4_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout5_Divide to PLL_CLKOUT5_DIVIDE : a parameter called PLL_CLKOUT5_DIVIDE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout5_Duty_Cycle to PLL_CLKOUT5_DUTY_CYCLE : a parameter called PLL_CLKOUT5_DUTY_CYCLE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter Pll_Clkout5_Phase to PLL_CLKOUT5_PHASE : a parameter called PLL_CLKOUT5_PHASE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter primitive to PRIMITIVE : a parameter called PRIMITIVE already exists in clk_wiz_v5_1
+WARNING: upgrade cannot rename parameter primtype_sel to PRIMTYPE_SEL : a parameter called PRIMTYPE_SEL already exists in clk_wiz_v5_1
+Set parameter PRIMITIVE to value MMCM
+Added parameter ENABLE_CDDC with value false
+Added parameter CDDCDONE_PORT with value cddcdone
+Added parameter CDDCREQ_PORT with value cddcreq
+Added parameter CLKOUT1_JITTER with value 0.0
+Added parameter CLKOUT1_PHASE_ERROR with value 0.0
+Added parameter CLKOUT2_JITTER with value 0.0
+Added parameter CLKOUT2_PHASE_ERROR with value 0.0
+Added parameter CLKOUT3_JITTER with value 0.0
+Added parameter CLKOUT3_PHASE_ERROR with value 0.0
+Added parameter CLKOUT4_JITTER with value 0.0
+Added parameter CLKOUT4_PHASE_ERROR with value 0.0
+Added parameter CLKOUT5_JITTER with value 0.0
+Added parameter CLKOUT5_PHASE_ERROR with value 0.0
+Added parameter CLKOUT6_JITTER with value 0.0
+Added parameter CLKOUT6_PHASE_ERROR with value 0.0
+Added parameter CLKOUT7_JITTER with value 0.0
+Added parameter CLKOUT7_PHASE_ERROR with value 0.0
+Added parameter INTERFACE_SELECTION with value Enable_AXI
+Set parameter USE_SPREAD_SPECTRUM to value false
+Removed parameter Use_Spread_Spectrum_1
+Set parameter PRIMTYPE_SEL to value MMCM_ADV
+
+3. Customization warnings
+-------------------------
+
+WARNING: An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.0' to '10.000' has been ignored for IP 'PxlClkGen'
+
+WARNING: An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.0' to '10.000' has been ignored for IP 'PxlClkGen'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:5.1 -user_name PxlClkGen
+set_property -dict "\
+  CONFIG.use_locked true \
+  CONFIG.clkout4_used false \
+  CONFIG.clkout5_jitter 0.0 \
+  CONFIG.mmcm_clkout5_phase 0.000 \
+  CONFIG.clk_out4_port CLK_OUT4 \
+  CONFIG.clkout5_drives BUFG \
+  CONFIG.clk_out1_port CLK_OUT1 \
+  CONFIG.mmcm_clkin2_period 10.000 \
+  CONFIG.secondary_in_jitter 0.010 \
+  CONFIG.status_port STATUS \
+  CONFIG.clkout1_requested_out_freq 108.000 \
+  CONFIG.clkfb_in_p_port CLKFB_IN_P \
+  CONFIG.clk_valid_port CLK_VALID \
+  CONFIG.feedback_source FDBK_AUTO \
+  CONFIG.clkout3_phase_error 0.0 \
+  CONFIG.clkout3_jitter 0.0 \
+  CONFIG.pll_clkout1_duty_cycle 0.500 \
+  CONFIG.mmcm_clkout4_phase 0.000 \
+  CONFIG.clkout3_drives BUFG \
+  CONFIG.clkout4_requested_out_freq 100.000 \
+  CONFIG.psincdec_port PSINCDEC \
+  CONFIG.clkfb_out_port CLKFB_OUT \
+  CONFIG.mmcm_clkout3_use_fine_ps false \
+  CONFIG.mmcm_bandwidth OPTIMIZED \
+  CONFIG.pll_clkfbout_phase 0.000 \
+  CONFIG.clkin2_ui_jitter 0.010 \
+  CONFIG.clkout1_jitter 0.0 \
+  CONFIG.enable_cddc false \
+  CONFIG.clkout5_requested_duty_cycle 50.000 \
+  CONFIG.platform nt64 \
+  CONFIG.interface_selection Enable_AXI \
+  CONFIG.clkout7_requested_out_freq 100.000 \
+  CONFIG.mmcm_clkout3_phase 0.000 \
+  CONFIG.clkout1_drives BUFG \
+  CONFIG.clkout1_sequence_number 1 \
+  CONFIG.use_inclk_stopped false \
+  CONFIG.prim_in_freq 100.000 \
+  CONFIG.clkout3_sequence_number 1 \
+  CONFIG.use_clk_valid false \
+  CONFIG.clkout5_sequence_number 1 \
+  CONFIG.use_reset false \
+  CONFIG.pll_clkout2_duty_cycle 0.500 \
+  CONFIG.drdy_port DRDY \
+  CONFIG.clkout7_sequence_number 1 \
+  CONFIG.pll_clkout4_divide 1 \
+  CONFIG.cddcreq_port cddcreq \
+  CONFIG.mmcm_divclk_divide 1 \
+  CONFIG.clkout2_phase_error 0.0 \
+  CONFIG.mmcm_clkout2_phase 0.000 \
+  CONFIG.override_mmcm false \
+  CONFIG.use_clkfb_stopped false \
+  CONFIG.mmcm_clkout2_use_fine_ps false \
+  CONFIG.clk_out2_use_fine_ps_gui false \
+  CONFIG.clkin2_jitter_ps 100.0 \
+  CONFIG.pll_clkout2_divide 1 \
+  CONFIG.clk_out4_use_fine_ps_gui false \
+  CONFIG.clk_out6_use_fine_ps_gui false \
+  CONFIG.mmcm_clkout4_cascade false \
+  CONFIG.clkfb_in_signaling SINGLE \
+  CONFIG.use_dyn_phase_shift false \
+  CONFIG.clkfb_in_port CLKFB_IN \
+  CONFIG.clkout1_requested_phase 0.000 \
+  CONFIG.mmcm_clkout1_phase 0.000 \
+  CONFIG.clkout3_requested_phase 0.000 \
+  CONFIG.override_pll false \
+  CONFIG.power_down_port POWER_DOWN \
+  CONFIG.pll_clkout3_duty_cycle 0.500 \
+  CONFIG.clkout5_requested_phase 0.000 \
+  CONFIG.clkout7_requested_phase 0.000 \
+  CONFIG.use_max_i_jitter false \
+  CONFIG.mmcm_clkfbout_phase 0.000 \
+  CONFIG.pll_clkout0_divide 1 \
+  CONFIG.clkout6_requested_duty_cycle 50.000 \
+  CONFIG.mmcm_clkout6_divide 1 \
+  CONFIG.mmcm_notes None \
+  CONFIG.mmcm_clkout0_phase 0.000 \
+  CONFIG.clkout1_phase_error 0.0 \
+  CONFIG.reset_type ACTIVE_HIGH \
+  CONFIG.clkout6_used false \
+  CONFIG.clock_mgr_type MANUAL \
+  CONFIG.in_jitter_units Units_UI \
+  CONFIG.clk_out6_port CLK_OUT6 \
+  CONFIG.mmcm_clkout1_use_fine_ps false \
+  CONFIG.mmcm_clkout4_divide 1 \
+  CONFIG.clkout3_used false \
+  CONFIG.summary_strings empty \
+  CONFIG.clk_out3_port CLK_OUT3 \
+  CONFIG.pll_clkout4_duty_cycle 0.500 \
+  CONFIG.psen_port PSEN \
+  CONFIG.dclk_port DCLK \
+  CONFIG.secondary_port CLK_IN2 \
+  CONFIG.pll_ref_jitter 0.010 \
+  CONFIG.mmcm_clkout0_duty_cycle 0.500 \
+  CONFIG.use_clock_sequencing false \
+  CONFIG.clkout2_requested_out_freq 100.000 \
+  CONFIG.mmcm_clkout2_divide 1 \
+  CONFIG.ss_mod_freq 250 \
+  CONFIG.clkfb_out_n_port CLKFB_OUT_N \
+  CONFIG.component_name PxlClkGen \
+  CONFIG.clkout5_requested_out_freq 100.000 \
+  CONFIG.clkout7_requested_duty_cycle 50.000 \
+  CONFIG.clk_in_sel_port CLK_IN_SEL \
+  CONFIG.prim_source No_buffer \
+  CONFIG.pll_notes None \
+  CONFIG.dout_port DOUT \
+  CONFIG.pll_clkout5_duty_cycle 0.500 \
+  CONFIG.mmcm_clkout0_use_fine_ps false \
+  CONFIG.relative_inclk REL_PRIMARY \
+  CONFIG.clkfb_stopped_port CLKFB_STOPPED \
+  CONFIG.use_freeze false \
+  CONFIG.cddcdone_port cddcdone \
+  CONFIG.clkout1_requested_duty_cycle 50.000 \
+  CONFIG.mmcm_clkout1_duty_cycle 0.500 \
+  CONFIG.clkout6_jitter 0.0 \
+  CONFIG.mmcm_clkfbout_mult_f 10.125 \
+  CONFIG.clkout6_drives BUFG \
+  CONFIG.din_port DIN \
+  CONFIG.use_power_down false \
+  CONFIG.calc_done DONE \
+  CONFIG.ss_mode CENTER_HIGH \
+  CONFIG.secondary_in_freq 100.000 \
+  CONFIG.daddr_port DADDR \
+  CONFIG.clkout4_jitter 0.0 \
+  CONFIG.use_status false \
+  CONFIG.clkin1_ui_jitter 0.010 \
+  CONFIG.clkout4_drives BUFG \
+  CONFIG.mmcm_clkin1_period 10.000 \
+  CONFIG.mmcm_clkout2_duty_cycle 0.500 \
+  CONFIG.clkout7_phase_error 0.0 \
+  CONFIG.use_min_power false \
+  CONFIG.clkout2_jitter 0.0 \
+  CONFIG.primtype_sel MMCM_ADV \
+  CONFIG.jitter_options UI \
+  CONFIG.use_freq_synth true \
+  CONFIG.clkout2_drives BUFG \
+  CONFIG.mmcm_startup_wait false \
+  CONFIG.mmcm_clock_hold false \
+  CONFIG.psdone_port PSDONE \
+  CONFIG.jitter_sel No_Jitter \
+  CONFIG.clkout2_requested_duty_cycle 50.000 \
+  CONFIG.pll_clkout5_divide 1 \
+  CONFIG.use_phase_alignment true \
+  CONFIG.clkout2_sequence_number 1 \
+  CONFIG.use_spread_spectrum false \
+  CONFIG.pll_clk_feedback CLKFBOUT \
+  CONFIG.clkin1_jitter_ps 100.0 \
+  CONFIG.clkout4_sequence_number 1 \
+  CONFIG.pll_clkout5_phase 0.000 \
+  CONFIG.prim_in_jitter 0.010 \
+  CONFIG.clkout5_used false \
+  CONFIG.clkout6_sequence_number 1 \
+  CONFIG.clk_out5_port CLK_OUT5 \
+  CONFIG.mmcm_clkout3_duty_cycle 0.500 \
+  CONFIG.clkout2_used false \
+  CONFIG.clk_out2_port CLK_OUT2 \
+  CONFIG.use_safe_clock_startup false \
+  CONFIG.pll_clkout3_divide 1 \
+  CONFIG.clkout6_phase_error 0.0 \
+  CONFIG.pll_clkin_period 10.000 \
+  CONFIG.pll_clkfbout_mult 4 \
+  CONFIG.clkfb_out_p_port CLKFB_OUT_P \
+  CONFIG.pll_clkout4_phase 0.000 \
+  CONFIG.clk_out1_use_fine_ps_gui false \
+  CONFIG.clk_out3_use_fine_ps_gui false \
+  CONFIG.mmcm_clkout6_use_fine_ps false \
+  CONFIG.clk_out5_use_fine_ps_gui false \
+  CONFIG.clkfb_in_n_port CLKFB_IN_N \
+  CONFIG.clkout3_requested_out_freq 100.000 \
+  CONFIG.clk_out7_use_fine_ps_gui false \
+  CONFIG.den_port DEN \
+  CONFIG.dwe_port DWE \
+  CONFIG.clkout2_requested_phase 0.000 \
+  CONFIG.pll_clkout1_divide 1 \
+  CONFIG.in_freq_units Units_MHz \
+  CONFIG.clkout4_requested_phase 0.000 \
+  CONFIG.clkout6_requested_phase 0.000 \
+  CONFIG.use_dyn_reconfig false \
+  CONFIG.mmcm_clkout4_duty_cycle 0.500 \
+  CONFIG.pll_clkout3_phase 0.000 \
+  CONFIG.clkout6_requested_out_freq 100.000 \
+  CONFIG.use_min_o_jitter false \
+  CONFIG.mmcm_ref_jitter1 0.010 \
+  CONFIG.mmcm_ref_jitter2 0.010 \
+  CONFIG.clkout3_requested_duty_cycle 50.000 \
+  CONFIG.mmcm_clkout0_divide_f 9.375 \
+  CONFIG.mmcm_clkout5_divide 1 \
+  CONFIG.pll_compensation SYSTEM_SYNCHRONOUS \
+  CONFIG.clkout5_phase_error 0.0 \
+  CONFIG.secondary_source Single_ended_clock_capable_pin \
+  CONFIG.primary_port CLK_IN1 \
+  CONFIG.pll_divclk_divide 1 \
+  CONFIG.pll_clkout2_phase 0.000 \
+  CONFIG.num_out_clks 1 \
+  CONFIG.mmcm_clkout5_use_fine_ps false \
+  CONFIG.primitive MMCM \
+  CONFIG.mmcm_compensation ZHOLD \
+  CONFIG.use_inclk_switchover false \
+  CONFIG.mmcm_clkout3_divide 1 \
+  CONFIG.mmcm_clkout5_duty_cycle 0.500 \
+  CONFIG.reset_port RESET \
+  CONFIG.pll_clkout1_phase 0.000 \
+  CONFIG.input_clk_stopped_port INPUT_CLK_STOPPED \
+  CONFIG.mmcm_clkout1_divide 1 \
+  CONFIG.mmcm_clkfbout_use_fine_ps false \
+  CONFIG.locked_port LOCKED \
+  CONFIG.clkout4_phase_error 0.0 \
+  CONFIG.psclk_port PSCLK \
+  CONFIG.pll_clkout0_phase 0.000 \
+  CONFIG.mmcm_clkout6_phase 0.000 \
+  CONFIG.clkout7_jitter 0.0 \
+  CONFIG.clkout4_requested_duty_cycle 50.000 \
+  CONFIG.pll_clkout0_duty_cycle 0.500 \
+  CONFIG.clkout7_drives BUFG \
+  CONFIG.mmcm_clkout6_duty_cycle 0.500 \
+  CONFIG.mmcm_clkout4_use_fine_ps false \
+  CONFIG.clkout7_used false \
+  CONFIG.pll_bandwidth OPTIMIZED \
+  CONFIG.clk_out7_port CLK_OUT7 " [get_ips PxlClkGen]
+
+

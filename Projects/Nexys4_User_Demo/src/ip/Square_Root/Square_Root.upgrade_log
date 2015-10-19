@@ -1,0 +1,90 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.1 (win64) Build 1215546 Mon Apr 27 19:22:08 MDT 2015
+| Date         : Thu Jun 25 16:41:56 2015
+| Host         : Sparky running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Square_Root'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Square_Root from xilinx.com:ip:cordic:4.0 to xilinx.com:ip:cordic:6.0 (Rev. 7)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: Migration from v4.0 also requires pin name changes. See the core documentation for full instructions on migration.
+
+3. Upgrade messages
+-------------------
+
+Removed parameter ND
+Removed parameter RDY
+Removed parameter X_OUT
+Removed parameter Y_OUT
+Removed parameter Phase_Output
+Removed parameter Register_Inputs
+Removed parameter Register_Outputs
+Renamed parameter CE to ACLKEN
+Renamed parameter SCLR to ARESETN
+Added parameter cartesian_has_tuser with value false
+Added parameter cartesian_tuser_width with value 1
+Added parameter cartesian_has_tlast with value false
+Added parameter phase_has_tuser with value false
+Added parameter phase_tuser_width with value 1
+Added parameter phase_has_tlast with value false
+Added parameter flow_control with value NonBlocking
+Added parameter optimize_goal with value Resources
+Added parameter out_tready with value false
+Added parameter out_tlast_behv with value Null
+
+4. Customization warnings
+-------------------------
+
+WARNING: An attempt to modify the value of disabled parameter 'optimize_goal' from 'Performance' to 'Resources' has been ignored for IP 'Square_Root'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  Please consult the warnings from the previous sections, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:cordic:6.0 -user_name Square_Root
+set_property -dict "\
+  CONFIG.aclken false \
+  CONFIG.input_width 26 \
+  CONFIG.architectural_configuration Parallel \
+  CONFIG.phase_has_tuser false \
+  CONFIG.iterations 0 \
+  CONFIG.compensation_scaling No_Scale_Compensation \
+  CONFIG.pipelining_mode Maximum \
+  CONFIG.cartesian_has_tlast false \
+  CONFIG.out_tready false \
+  CONFIG.phase_format Radians \
+  CONFIG.out_tlast_behv Null \
+  CONFIG.flow_control NonBlocking \
+  CONFIG.functional_selection Square_Root \
+  CONFIG.component_name Square_Root \
+  CONFIG.round_mode Truncate \
+  CONFIG.precision 0 \
+  CONFIG.coarse_rotation false \
+  CONFIG.cartesian_has_tuser false \
+  CONFIG.output_width 14 \
+  CONFIG.aresetn false \
+  CONFIG.data_format UnsignedInteger \
+  CONFIG.optimize_goal Resources \
+  CONFIG.phase_has_tlast false \
+  CONFIG.cartesian_tuser_width 1 \
+  CONFIG.phase_tuser_width 1 " [get_ips Square_Root]
+
+
